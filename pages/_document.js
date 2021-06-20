@@ -10,20 +10,18 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <Head>
-            <title>
-              Scoreboarder: Keep track of scoreboards on Discord with ease
-            </title>
-            <meta
-              name="description"
-              content="Scoreboarder is a Discord bot for making scoreboards (or leaderboards). You can create scoreboards and add or remove points from people and much more!"
-            />
-            <meta property="og:title" content="Scoreboarder"></meta>
-            <meta
-              property="og:description"
-              content="Keep track of scoreboards on Discord with ease"
-            ></meta>
-          </Head>
+          <title>
+            Scoreboarder: Keep track of scoreboards on Discord with ease
+          </title>
+          <meta
+            name="description"
+            content="Scoreboarder is a Discord bot for making scoreboards (or leaderboards). You can create scoreboards and add or remove points from people and much more!"
+          />
+          <meta property="og:title" content="Scoreboarder"></meta>
+          <meta
+            property="og:description"
+            content="Keep track of scoreboards on Discord with ease"
+          ></meta>
 
           <meta name="theme-color" content="#007A7A"></meta>
 
