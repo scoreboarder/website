@@ -3,12 +3,6 @@ import Head from "next/head";
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Scoreboarder</title>
-        <meta name="description" content="Scoreboarder" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className="flex flex-col items-center mx-4 md:mx-8 my-8">
         <div className="w-full xl:w-3/4 max-w-6xl flex flex-col space-y-24 ">
           <Nav />
