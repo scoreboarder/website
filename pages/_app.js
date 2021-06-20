@@ -14,12 +14,6 @@ function MyApp({ Component, pageProps }) {
         ></meta>
       </Head>
 
-      <Script
-        src="/js/script.js"
-        data-domain="scoreboarder.xyz"
-        strategy="afterInteractive"
-      ></Script>
-
       <Component {...pageProps} />
     </>
   );

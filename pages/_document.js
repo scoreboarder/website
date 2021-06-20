@@ -50,6 +50,12 @@ class MyDocument extends Document {
             property="og:image"
             content="https://scoreboarder.xyz/opengraph.jpg"
           ></meta>
+
+          <script
+            defer
+            data-domain="scoreboarder.xyx"
+            src="/js/script.js"
+          ></script>
         </Head>
         <body>
           <Main />
