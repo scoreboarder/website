@@ -53,7 +53,7 @@ class MyDocument extends Document {
 
           <script
             defer
-            data-domain="scoreboarder.xyx"
+            data-domain="scoreboarder.xyz"
             src="/js/script.js"
           ></script>
         </Head>
