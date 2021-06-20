@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
+
+@import url("https://rsms.me/inter/inter.css");
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@font-face {
+  font-family: "HK Grotesk";
+  font-weight: bold;
+  src: url("/fonts/hk-grotesk-extrabold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HK Grotesk";
+  font-weight: normal;
+  src: url("/fonts/hk-grotesk-semibold.woff") format("woff");
+}
+
 @tailwind utilities;
