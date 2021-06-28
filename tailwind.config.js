@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         primary: "#007A7A",
         primaryDarker: "#006767",
+        primaryLighter: "#D0DDDE",
         secondary: colors.gray[200],
         secondaryDarker: colors.gray[300],
       },
