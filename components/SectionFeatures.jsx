@@ -6,7 +6,7 @@ export default function SectionFeatures() {
   return (
     <div className="bg-secondary rounded-[50px] -mx-16 px-8 py-24 space-y-16">
       <Feature
-        icon="/features/icon.png"
+        icon="/features/multple.svg"
         iconAlt="TODO"
         title="Multiple Scoreboards"
         description="Officia non fugiat anim dolore qui nostrud aute pariatur deserunt ullamco dolor minim dolor. Tempor velit laborum magna do voluptate nostrud. Excepteur amet adipisicing reprehenderit commodo commodo proident proident commodo Lorem commodo incididunt dolor. Incididunt nisi deserunt commodo do deserunt quis dolore cupidatat."
@@ -15,7 +15,7 @@ export default function SectionFeatures() {
         reverse={false}
       />
       <Feature
-        icon="/features/icon.png"
+        icon="/features/roles.svg"
         iconAlt="TODO"
         title="Use roles"
         description="Officia non fugiat anim dolore qui nostrud aute pariatur deserunt ullamco dolor minim dolor. Tempor velit laborum magna do voluptate nostrud. Excepteur amet adipisicing reprehenderit commodo commodo proident proident commodo Lorem commodo incididunt dolor. Incididunt nisi deserunt commodo do deserunt quis dolore cupidatat."
@@ -45,7 +45,7 @@ function Feature({
   imageAlt,
   reverse,
 }) {
-  const base = "flex ";
+  const base = "flex items-center ";
   const order = {
     [false]: base + "flex-row",
     [true]: base + "flex-row-reverse",
@@ -54,16 +54,10 @@ function Feature({
   return (
     <section className={order[reverse]}>
       <div className="mx-8 w-1/2">
-        <Image
-          src={icon}
-          className="mb-8"
-          width="40px"
-          height="40px"
-          alt={iconAlt}
-        />
-        <Heading.H2 className="font-heading font-bold text-4xl mb-2">
-          {title}
-        </Heading.H2>
+        <div className="mb-4">
+          <Image src={icon} width="40px" height="40px" alt={iconAlt} />
+        </div>
+        <Heading.H2>{title}</Heading.H2>
         <p>{description}</p>
       </div>
       <Image

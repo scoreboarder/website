@@ -11,7 +11,7 @@ function Subtitle({ children }) {
 }
 
 function H2({ children }) {
-  return <h2 className="font-heading font-bold text-4xl mb-4 ">{children}</h2>;
+  return <h2 className="font-heading font-bold text-4xl mb-2 ">{children}</h2>;
 }
 
 function H3({ children }) {
