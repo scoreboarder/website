@@ -1,8 +1,6 @@
 import Heading from "./Heading";
 import Button from "./Button";
 
-import DiscordSvg from "../assets/icons/discord.svg";
-
 export default function SectionContactUs() {
   return (
     <section className="flex flex-col items-center">
@@ -14,7 +12,7 @@ export default function SectionContactUs() {
       <Button
         href="https://discord.gg/eY5rpZ8vrA"
         type="secondary"
-        icon={DiscordSvg}
+        icon="/icons/discord.svg"
       >
         Join Support Server
       </Button>

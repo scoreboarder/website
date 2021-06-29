@@ -2,8 +2,6 @@ import Image from "next/image";
 
 import Heading from "./Heading";
 
-import QuoteSvg from "../assets/icons/quote.svg";
-
 export default function SectionQuotes() {
   return (
     <section className="flex flex-col items-center w-full 	">
@@ -50,7 +48,7 @@ function Quote({ message, user }) {
         <div className="max-w-[200px]">
           <div className="mb-4">
             <Image
-              src={QuoteSvg}
+              src="/icons/quote.svg"
               alt="Citation mark"
               width="30px"
               height="30px"

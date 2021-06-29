@@ -2,9 +2,6 @@ import Image from "next/image";
 
 import Heading from "./Heading";
 
-import MultipleScoreboardsImage from "../assets/features/multiplescoreboards.png";
-import RolesImage from "../assets/features/roles.png";
-
 export default function SectionFeatures() {
   return (
     <div className="bg-secondary rounded-[50px] -mx-16 px-8 py-24 space-y-16">
@@ -13,7 +10,7 @@ export default function SectionFeatures() {
         iconAlt="TODO"
         title="Multiple Scoreboards"
         description="Officia non fugiat anim dolore qui nostrud aute pariatur deserunt ullamco dolor minim dolor. Tempor velit laborum magna do voluptate nostrud. Excepteur amet adipisicing reprehenderit commodo commodo proident proident commodo Lorem commodo incididunt dolor. Incididunt nisi deserunt commodo do deserunt quis dolore cupidatat."
-        image={MultipleScoreboardsImage}
+        image="/features/multiplescoreboards.png"
         imageAlt="TODO"
         reverse={false}
       />
@@ -22,7 +19,7 @@ export default function SectionFeatures() {
         iconAlt="TODO"
         title="Use roles"
         description="Officia non fugiat anim dolore qui nostrud aute pariatur deserunt ullamco dolor minim dolor. Tempor velit laborum magna do voluptate nostrud. Excepteur amet adipisicing reprehenderit commodo commodo proident proident commodo Lorem commodo incididunt dolor. Incididunt nisi deserunt commodo do deserunt quis dolore cupidatat."
-        image={RolesImage}
+        image="/features/roles.png"
         imageAlt="TODO"
         reverse={true}
       />

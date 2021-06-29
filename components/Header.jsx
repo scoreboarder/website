@@ -3,9 +3,6 @@ import Button from "./Button";
 import ButtonGroup from "./ButtonGroup";
 import Stat from "./Stat";
 
-import DiscordSvg from "../assets/icons/discord.svg";
-import RobotSvg from "../assets/icons/robot.svg";
-
 export default function Header({ currentServers }) {
   return (
     <header className="space-y-12">
@@ -23,14 +20,14 @@ export default function Header({ currentServers }) {
           <Button
             href="https://discord.com/oauth2/authorize?client_id=641229153433288724&scope=bot&permissions=18496"
             type="primary"
-            icon={RobotSvg}
+            icon="/icons/robot.svg"
           >
             Invite Scoreboarder
           </Button>
           <Button
             href="https://discord.gg/eY5rpZ8vrA"
             type="secondary"
-            icon={DiscordSvg}
+            icon="/icons/discord.svg"
           >
             Join Support Server
           </Button>
