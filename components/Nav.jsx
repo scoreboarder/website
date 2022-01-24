@@ -16,15 +16,6 @@ export default function Nav() {
       </div>
       <ButtonGroup>
         <Button
-          href="https://github.com/scoreboarder"
-          icon="/icons/github.svg"
-          iconAlt="Github logo"
-          type="light"
-        >
-          View Source
-        </Button>
-
-        <Button
           href="#"
           icon="/icons/heart.svg"
           iconAlt="Heart"
