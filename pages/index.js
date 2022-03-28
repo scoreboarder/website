@@ -22,15 +22,38 @@ export default function Home({ issues, currentServers }) {
   );
 }
 
-export async function getServerSideProps(context) {
-  const truncateString = (str, num) => {
-    if (str.length > num) {
-      return str.slice(0, num) + "...";
-    } else {
-      return str;
-    }
+export async function getStaticProps() {
+  return {
+    props: {
+      issues: await fetchGithubIssues(),
+      currentServers: await fetchTopGGStats(),
+    },
+    revalidate: 60 * 10,
   };
+}
 
+async function fetchGithubIssues() {
+  const issuesResponse = await fetch(
+    "https://api.github.com/repos/scoreboarder/suggestions/issues",
+    {
+      method: "GET",
+      headers: { Accept: "application/vnd.github.v3+json" },
+    }
+  );
+
+  return (await issuesResponse.json())
+    .filter((item) => {
+      return item.labels.some((label) => label.name == "accepted");
+    })
+    .map((item) => ({
+      number: item.number,
+      title: item.title,
+      body: truncateString(item.body, 100),
+      url: item.html_url,
+    }));
+}
+
+async function fetchTopGGStats() {
   const topggStatsResponse = await fetch(
     "https://top.gg/api/bots/641229153433288724",
     {
@@ -42,31 +65,54 @@ export async function getServerSideProps(context) {
     }
   );
 
-  const topggStats = await topggStatsResponse.json();
-
-  const issuesResponse = await fetch(
-    "https://api.github.com/repos/scoreboarder/suggestions/issues",
-    {
-      method: "GET",
-      headers: { Accept: "application/vnd.github.v3+json" },
-    }
-  );
-
-  const issues = (await issuesResponse.json())
-    .filter((item) => {
-      return item.labels.some((label) => label.name == "accepted");
-    })
-    .map((item) => ({
-      number: item.number,
-      title: item.title,
-      body: truncateString(item.body, 100),
-      url: item.html_url,
-    }));
-
-  return {
-    props: {
-      issues,
-      currentServers: topggStats?.server_count,
-    },
-  };
+  return await topggStatsResponse.json().server_count;
 }
+
+// export async function getServerSideProps(context) {
+//   const truncateString = (str, num) => {
+//     if (str.length > num) {
+//       return str.slice(0, num) + "...";
+//     } else {
+//       return str;
+//     }
+//   };
+
+//   const topggStatsResponse = await fetch(
+//     "https://top.gg/api/bots/641229153433288724",
+//     {
+//       method: "GET",
+//       headers: {
+//         Accept: "application/json",
+//         Authorization: process.env.TOPGG_TOKEN,
+//       },
+//     }
+//   );
+
+//   const topggStats = await topggStatsResponse.json();
+
+//   const issuesResponse = await fetch(
+//     "https://api.github.com/repos/scoreboarder/suggestions/issues",
+//     {
+//       method: "GET",
+//       headers: { Accept: "application/vnd.github.v3+json" },
+//     }
+//   );
+
+//   const issues = (await issuesResponse.json())
+//     .filter((item) => {
+//       return item.labels.some((label) => label.name == "accepted");
+//     })
+//     .map((item) => ({
+//       number: item.number,
+//       title: item.title,
+//       body: truncateString(item.body, 100),
+//       url: item.html_url,
+//     }));
+
+//   return {
+//     props: {
+//       issues,
+//       currentServers: topggStats?.server_count,
+//     },
+//   };
+// }
