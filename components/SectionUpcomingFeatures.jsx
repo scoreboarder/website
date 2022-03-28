@@ -5,7 +5,7 @@ import TextLink from "./TextLink";
 
 export default function SectionUpcomingFeatures({ issues }) {
   return (
-    <div className="bg-card shadow-xl border-2 border-primaryDarker -mx-16 px-16 py-24 flex flex-col items-center">
+    <div className="bg-card shadow-xl border-l-0 sm:border-l-2 sm:border-r-2 border-r-0 border-2 border-primaryDarker -mx-4 sm:-mx-16 px-4 sm:px-16 py-16 sm:py-24 flex flex-col items-center">
       <Heading.H2>Upcoming Features</Heading.H2>
       <Heading.H3>
         These are issues from{" "}

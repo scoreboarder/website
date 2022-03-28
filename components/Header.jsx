@@ -5,7 +5,7 @@ import Stat from "./Stat";
 
 export default function Header({ currentServers }) {
   return (
-    <header className="space-y-12">
+    <header className="space-y-8 sm:space-y-12">
       <div>
         <Heading.Title>
           Keep track of scoreboards on Discord{" "}

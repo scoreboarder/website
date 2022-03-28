@@ -5,7 +5,7 @@ export default function SectionJoin() {
   return (
     <section className="md:flex flex-col items-center">
       <Heading.H2>What are you waiting for?</Heading.H2>
-      <Heading.H3 className="!text-left">
+      <Heading.H3 className="!text-left mb-8">
         Add Scoreborder to your server
       </Heading.H3>
       <Button

@@ -28,7 +28,9 @@ function Quote({ message, user }) {
 export default function SectionQuotes() {
   return (
     <section className="flex flex-col items-center w-full 	">
-      <Heading.H2>Don't take our word for it</Heading.H2>
+      <Heading.H2 className={"text-center"}>
+        Don't take our word for it
+      </Heading.H2>
       <Heading.H3>Here’s what our users say about Scoreborder</Heading.H3>
       <ul className="pt-8 w-full flex flex-row justify-center flex-wrap -m-2">
         <Quote
