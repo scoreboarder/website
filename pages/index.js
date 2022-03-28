@@ -49,7 +49,9 @@ async function fetchGithubIssues() {
     }
   );
 
-  return (await issuesResponse.json())
+  const json = await issuesResponse.json();
+
+  return json
     .filter((item) => {
       return item.labels.some((label) => label.name == "accepted");
     })
@@ -73,7 +75,9 @@ async function fetchTopGGStats() {
     }
   );
 
-  return (await topggStatsResponse?.json()?.server_count) ?? "Error";
+  const json = await topggStatsResponse?.json();
+
+  return json?.server_count ?? "Error";
 }
 
 // export async function getServerSideProps(context) {
