@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import SectionFeatures from "../components/SectionFeatures";
 import SectionQuotes from "../components/SectionQuotes";
 import SectionUpcomingFeatures from "../components/SectionUpcomingFeatures";
-import SectionContactUs from "../components/SectionContactUs";
+import SectionJoin from "../components/SectionJoin";
 import Footer from "../components/Footer";
 
 export default function Home({ issues, currentServers }) {
@@ -13,9 +13,9 @@ export default function Home({ issues, currentServers }) {
         <Nav />
         <Header currentServers={currentServers} />
         <SectionFeatures />
-        <SectionQuotes /> 
+        <SectionQuotes />
         <SectionUpcomingFeatures issues={issues} />
-        <SectionContactUs />
+        <SectionJoin />
         <Footer />
       </div>
     </main>

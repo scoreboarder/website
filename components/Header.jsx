@@ -34,7 +34,7 @@ export default function Header({ currentServers }) {
         </ButtonGroup>
       </div>
 
-      <hr className="border-separator" />
+      <hr className="border-separator border-dashed" />
 
       <ul className="flex flex-col sm:flex-row space-y-8 sm:space-y-0 sm:space-x-16">
         <Stat title="Current Servers" value={currentServers ?? "3500+"} />

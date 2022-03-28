@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Button({ children, href, type, icon, iconAlt }) {
   const types = {
-    primary: "text-black bg-white border-2 hover:bg-primaryDarker",
-    secondary: "text-white border-2 hover:bg-secondaryDarker",
+    primary: "text-black bg-primary hover:bg-primaryDarker",
+    secondary: "text-black bg-secondary hover:bg",
     light: "text-black hover:bg-secondary",
   };
 

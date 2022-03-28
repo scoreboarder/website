@@ -4,7 +4,7 @@ import Heading from "./Heading";
 
 export default function SectionFeatures() {
   return (
-    <div className="bg-[#16181c] rounded-none -mx-16 px-8 py-24 space-y-16">
+    <div className="bg-card border-2 border-primaryDarker -mx-16 px-16 py-24 space-y-16 shadow-xl">
       <Feature
         icon="/features/multple.svg"
         iconAlt="TODO"
@@ -28,7 +28,7 @@ export default function SectionFeatures() {
         iconAlt="TODO"
         title="Pick a theme"
         description="Officia non fugiat anim dolore qui nostrud aute pariatur deserunt ullamco dolor minim dolor. Tempor velit laborum magna do voluptate nostrud. Excepteur amet adipisicing reprehenderit commodo commodo proident proident commodo Lorem commodo incididunt dolor. Incididunt nisi deserunt commodo do deserunt quis dolore cupidatat."
-        image="/features/feature.png"
+        image="/features/roles.png"
         imageAlt="TODO"
         reverse={false}
       />
@@ -53,21 +53,24 @@ function Feature({
 
   return (
     <section className={order[reverse]}>
-      <div className="mx-8 my-4 md:mx-8 md:w-1/2">
+      <div className="my-4 md:mx-8 md:w-1/2">
         <div className="mb-4">
           <Image src={icon} width="40px" height="40px" alt={iconAlt} />
         </div>
         <Heading.H2>{title}</Heading.H2>
         <p className="text-white">{description}</p>
       </div>
-      <Image
-        src={image}
-        alt={imageAlt}
-        className="mx-8 rounded-3xl"
-        objectFit="cover"
-        width="500px"
-        height="300px"
-      />
+
+      <div className="w-full md:w-1/2 md:mx-8 ">
+        <Image
+          src={image}
+          alt={imageAlt}
+          className="rounded-3xl"
+          layout="responsive"
+          width="500px"
+          height="300px"
+        />
+      </div>
     </section>
   );
 }

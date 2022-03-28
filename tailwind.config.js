@@ -6,15 +6,17 @@ module.exports = {
   darkMode: true, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage: {
+        dots: "url('/background.png')",
+      },
       colors: {
-        primary: "white",
-        primaryDarker: "#cb997e",
-        primaryLighter: "#D0DDDE",
-        secondary: "white",
-        secondaryDarker: colors.gray[300],
-        background: "#1c1e24",
-        card: "#16181c",
-        separator: "#2F3136",
+        primary: "#6694dd",
+        primaryDarker: "#4870c0",
+        secondary: colors.gray[100],
+        secondaryDarker: colors.gray[400],
+        card: "#1c1e24",
+        background: "#101114",
+        separator: "#474a52",
         text: colors.white,
         textSecondary: colors.gray[400],
       },
