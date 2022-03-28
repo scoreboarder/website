@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta name="theme-color" content="#007A7A"></meta>
+          <meta name="theme-color" content="#4870C0"></meta>
 
           <link rel="icon" href="/favicons/favicon.ico"></link>
           <link
