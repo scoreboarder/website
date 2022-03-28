@@ -32,6 +32,14 @@ export async function getStaticProps() {
   };
 }
 
+function truncateString(str, num) {
+  if (str.length > num) {
+    return str.slice(0, num) + "...";
+  } else {
+    return str;
+  }
+}
+
 async function fetchGithubIssues() {
   const issuesResponse = await fetch(
     "https://api.github.com/repos/scoreboarder/suggestions/issues",
@@ -65,7 +73,7 @@ async function fetchTopGGStats() {
     }
   );
 
-  return await topggStatsResponse.json().server_count;
+  return (await topggStatsResponse?.json()?.server_count) ?? "Error";
 }
 
 // export async function getServerSideProps(context) {
