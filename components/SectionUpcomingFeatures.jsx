@@ -5,7 +5,7 @@ import TextLink from "./TextLink";
 
 export default function SectionUpcomingFeatures({ issues }) {
   return (
-    <div className="bg-secondary rounded-[50px] -mx-16 px-16 py-24 flex flex-col items-center">
+    <div className="bg-card rounded-[50px] -mx-16 px-16 py-24 flex flex-col items-center">
       <Heading.H2>Upcoming Features</Heading.H2>
       <Heading.H3>
         These are Issues taken from{" "}
@@ -27,7 +27,7 @@ export default function SectionUpcomingFeatures({ issues }) {
 
 function UpcomingFeature({ number, title, body, url }) {
   return (
-    <li className="p-3 border-2 rounded-lg border-primary cursor-pointer">
+    <li className="text-white p-3 border-2 rounded-lg border-primary cursor-pointer">
       <Link href={url} passHref>
         <a target="_blank" rel="noreferrer">
           <h3 className="font-semibold">

@@ -34,9 +34,9 @@ export default function Header({ currentServers }) {
         </ButtonGroup>
       </div>
 
-      <hr className="border-secondary" />
+      <hr className="border-separator" />
 
-      <ul className="flex flex-row space-x-16">
+      <ul className="flex flex-col sm:flex-row space-y-8 sm:space-y-0 sm:space-x-16">
         <Stat title="Current Servers" value={currentServers ?? "3500+"} />
         <Stat title="Top.gg rating" value="4.5/5" />
         <Stat title="Total scoreboards" value="12000+" />

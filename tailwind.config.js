@@ -3,15 +3,20 @@ const colors = require("tailwindcss/colors");
 module.exports = {
   mode: "jit",
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: true, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
-        primary: "#007A7A",
-        primaryDarker: "#006767",
+        primary: "white",
+        primaryDarker: "#cb997e",
         primaryLighter: "#D0DDDE",
-        secondary: colors.gray[200],
+        secondary: "white",
         secondaryDarker: colors.gray[300],
+        background: "#1c1e24",
+        card: "#16181c",
+        separator: "#2F3136",
+        text: colors.white,
+        textSecondary: colors.gray[400],
       },
       fontFamily: {
         heading: ["HK Grotesk", "sans-serif"],

@@ -4,7 +4,7 @@ import Heading from "./Heading";
 
 export default function SectionFeatures() {
   return (
-    <div className="bg-secondary rounded-[50px] -mx-16 px-8 py-24 space-y-16">
+    <div className="bg-[#16181c] rounded-none -mx-16 px-8 py-24 space-y-16">
       <Feature
         icon="/features/multple.svg"
         iconAlt="TODO"
@@ -23,7 +23,7 @@ export default function SectionFeatures() {
         imageAlt="TODO"
         reverse={true}
       />
-      {/* <Feature
+      <Feature
         icon="/features/icon.png"
         iconAlt="TODO"
         title="Pick a theme"
@@ -31,7 +31,7 @@ export default function SectionFeatures() {
         image="/features/feature.png"
         imageAlt="TODO"
         reverse={false}
-      /> */}
+      />
     </div>
   );
 }
@@ -47,18 +47,18 @@ function Feature({
 }) {
   const base = "flex items-center ";
   const order = {
-    [false]: base + "flex-row",
-    [true]: base + "flex-row-reverse",
+    [false]: base + "flex-col-reverse md:flex-row",
+    [true]: base + "flex-col-reverse md:flex-row-reverse",
   };
 
   return (
     <section className={order[reverse]}>
-      <div className="mx-8 w-1/2">
+      <div className="mx-8 my-4 md:mx-8 md:w-1/2">
         <div className="mb-4">
           <Image src={icon} width="40px" height="40px" alt={iconAlt} />
         </div>
         <Heading.H2>{title}</Heading.H2>
-        <p>{description}</p>
+        <p className="text-white">{description}</p>
       </div>
       <Image
         src={image}

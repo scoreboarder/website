@@ -2,15 +2,15 @@ import Image from "next/image";
 
 export default function Button({ children, href, type, icon, iconAlt }) {
   const types = {
-    primary: "text-white bg-primary hover:bg-primaryDarker",
-    secondary: "text-black bg-secondary hover:bg-secondaryDarker",
+    primary: "text-black bg-white border-2 hover:bg-primaryDarker",
+    secondary: "text-white border-2 hover:bg-secondaryDarker",
     light: "text-black hover:bg-secondary",
   };
 
   return (
     <a
       className={
-        "py-2 px-4 rounded-lg inline-flex flex-row items-center space-x-2 duration-200 " +
+        "py-2 px-4 inline-flex flex-row items-center space-x-2 duration-200 " +
         types[type]
       }
       href={href}

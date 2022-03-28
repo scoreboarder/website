@@ -13,7 +13,7 @@ export default function Home({ issues, currentServers }) {
         <Nav />
         <Header currentServers={currentServers} />
         <SectionFeatures />
-        <SectionQuotes />
+        <SectionQuotes /> 
         <SectionUpcomingFeatures issues={issues} />
         <SectionContactUs />
         <Footer />

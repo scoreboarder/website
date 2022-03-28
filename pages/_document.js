@@ -44,7 +44,7 @@ class MyDocument extends Document {
             src="/js/script.js"
           ></script>
         </Head>
-        <body>
+        <body className="bg-background">
           <Main />
           <NextScript />
         </body>

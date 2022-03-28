@@ -43,9 +43,9 @@ export default function SectionQuotes() {
 
 function Quote({ message, user }) {
   return (
-    <li className="block m-2">
+    <li className="w-full sm:w-[unset] block m-2">
       <blockquote className="flex flex-col justify-between rounded-2xl bg-primaryLighter p-6 h-full">
-        <div className="max-w-[200px]">
+        <div className="sm:max-w-[200px]">
           <div className="mb-4">
             <Image
               src="/icons/quote.svg"

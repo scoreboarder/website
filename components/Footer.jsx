@@ -12,10 +12,10 @@ export default function Footer() {
         width="40px"
         height="40px"
       />
-      <h2 className="font-semibold mt-2">Scoreboarder</h2>
+      <h2 className="font-semibold text-text mt-2">Scoreboarder</h2>
       <div className="flex flex-row justify-between">
-        <p className="text-gray-600">Copyright © {year} Sebastian Danckwardt</p>
-        <p className="text-gray-600">
+        <p className="text-textSecondary">Copyright © {year} Sebastian Danckwardt</p>
+        <p className="text-textSecondary">
           Designed by{" "}
           <TextLink href="https://alvar.dev?utm_source=scoreboarder.xyz">
             Alvar Lagerlöf
