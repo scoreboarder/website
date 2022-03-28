@@ -16,10 +16,10 @@ function Quote({ message, user }) {
             />
           </div>
 
-          <span className="mb-8 text-white">{message}</span>
+          <span className="text-white">{message}</span>
         </div>
 
-        <cite className="text-primary font-bold not-italic">{user}</cite>
+        <cite className="text-primary font-bold not-italic mt-2">{user}</cite>
       </blockquote>
     </li>
   );
