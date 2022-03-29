@@ -25,10 +25,12 @@ export default function Nav() {
 
       <ButtonGroup>
         <Button
-          href="#"
+          href="https://www.buymeacoffee.com/scoreboarder"
           icon="/icons/heart.svg"
           iconAlt="Heart"
           type="secondary"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Sponsor
         </Button>
