@@ -4,7 +4,7 @@ import Heading from "./Heading";
 
 function Quote({ message, user }) {
   return (
-    <li className="w-full sm:w-[unset] block m-2 border-2 border-dashed border-separator">
+    <li className="w-full sm:w-[unset] block mt-2 mb-2 sm:m-2 border-2 border-dashed border-separator">
       <blockquote className="flex flex-col justify-between rounded-2xl bg-primaryLighter p-6 h-full">
         <div className="sm:max-w-[200px]">
           <div className="mb-4">
