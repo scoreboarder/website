@@ -2,18 +2,7 @@ import Image from "next/image";
 
 import Heading from "./Heading";
 
-
-/*
-
-Show Scoreboards directly in Discord
-Use Roles
-Multiple Scoreboards
-
-*/
-
 export default function SectionFeatures() {
-
-
   return (
     <div className="bg-card shadow-xl border-l-0 sm:border-l-2 sm:border-r-2 border-r-0 border-2 border-primaryDarker -mx-4 sm:-mx-16 px-4 sm:px-16 py-16 sm:py-24 space-y-8 flex flex-col items-center">
       <Feature
@@ -21,7 +10,7 @@ export default function SectionFeatures() {
         iconAlt="TODO"
         title="Multiple Scoreboards" 
         description="You can have as many scoreboards as you want. You can also have the same people on multiple different scoreboards if you want."
-        image="/features/backgrounds/multiple.webp"
+        image="/features/multiple.webp"
         imageAlt="TODO"
         reverse={false}
       />
@@ -30,7 +19,7 @@ export default function SectionFeatures() {
         iconAlt="TODO"
         title="Use roles"
         description="By using roles, each individual with that role will be added to the scoreboard. This could be useful for keeping track of points for a game, competition or similiar. You can also add any word to your scoreboard if you want Team A and Team B on the scoreboard."
-        image="/features/backgrounds/role.webp"
+        image="/features/role.webp"
         imageAlt="TODO"
         reverse={true}
       />
@@ -39,7 +28,7 @@ export default function SectionFeatures() {
         iconAlt="TODO"
         title="View all your scoreboards in Discord"
         description="All of your scoreboards will be accessible straight from the Discord chat. There are also several themes available to suit your needs."
-        image="/features/backgrounds/show.webp"
+        image="/features/show.webp"
         imageAlt="TODO"
         reverse={false}
       />
@@ -48,7 +37,7 @@ export default function SectionFeatures() {
         iconAlt="TODO"
         title="Easy to use"
         description="Getting started with Scoreboarder is simple. There is not set up required, simply add Scoreboarder to your Discord server and create your first scoreboard!"
-        image="/features/backgrounds/easy.webp"
+        image="/features/easy.webp"
         imageAlt="TODO"
         reverse={true}
       />
