@@ -10,8 +10,8 @@ module.exports = {
         dots: "url('/background.png')",
       },
       colors: {
-        primary: "#6694dd",
-        primaryDarker: "#4870c0",
+        primary: "#F1C657",
+        primaryDarker: "#c49f3d",
         secondary: colors.gray[100],
         secondaryDarker: colors.gray[400],
         card: "#1c1e24",

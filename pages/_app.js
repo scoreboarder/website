@@ -11,7 +11,8 @@ function MyApp({ Component, pageProps }) {
         </title>
         <meta
           name="description"
-          content="Scoreboarder is a Discord bot for making scoreboards (or leaderboards). You can create scoreboards and add or remove points from people and much more!"
+          content="Discord bot for making scoreboards, leaderboards and much more! Create any number of scoreboards and add however many people you want to them.
+          "
         />
         <meta property="og:title" content="Scoreboarder"></meta>
         <meta
