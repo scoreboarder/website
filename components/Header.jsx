@@ -18,7 +18,7 @@ export default function Header({ currentServers }) {
         </Heading.Subtitle>
         <ButtonGroup>
           <Button
-            href="https://discord.com/oauth2/authorize?client_id=641229153433288724&scope=bot&permissions=18496"
+            href="https://discord.com/api/oauth2/authorize?client_id=641229153433288724&permissions=2147485696&scope=applications.commands%20bot"
             type="primary"
             icon="/icons/robot.svg"
           >
