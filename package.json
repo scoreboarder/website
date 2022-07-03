@@ -8,17 +8,17 @@
     "start": "next start"
   },
   "dependencies": {
-    "@netlify/plugin-nextjs": "^4.3.0",
-    "autoprefixer": "^10.4.4",
+    "@netlify/plugin-nextjs": "4.3.0",
+    "autoprefixer": "10.4.4",
     "next": "12.2.0",
-    "postcss": "^8.4.12",
+    "postcss": "8.4.12",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "tailwindcss": "^3.0.23"
+    "tailwindcss": "3.0.23"
   },
   "devDependencies": {
-    "eslint": "^8.12.0",
-    "eslint-config-next": "^12.1.1",
-    "netlify-plugin-cache-nextjs": "^1.6.1"
+    "eslint": "8.12.0",
+    "eslint-config-next": "12.1.1",
+    "netlify-plugin-cache-nextjs": "1.6.1"
   }
 }
