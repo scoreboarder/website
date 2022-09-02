@@ -3,6 +3,10 @@
   "timezone": "Europe/Stockholm",
   "rangeStrategy": "pin",
   "platformAutomerge": true,
+  "schedule": ["every weekend"],
+  "vulnerabilityAlerts": {
+    "schedule": null
+  },
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true,
@@ -14,8 +18,7 @@
       "automerge": true
     },
     {
-      "matchUpdateTypes": ["major"],
-      "schedule": ["every weekend"]
+      "matchUpdateTypes": ["major"]
     }
   ]
 }
