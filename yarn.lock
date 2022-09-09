@@ -214,15 +214,15 @@
   dependencies:
     is-promise "^4.0.0"
 
-"@netlify/ipx@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@netlify/ipx/-/ipx-1.2.3.tgz#c373f25564c644f57126ffd035fa58497dc2cd59"
-  integrity sha512-KMyugb9pAdyAjCxPPZ0i8Ft9jz1daAYl5URTybrcGY9S6gdjv2B8ICWaxocZLKTC8SwGgrIi0lxPliQ6Hamnqw==
+"@netlify/ipx@^1.2.5":
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@netlify/ipx/-/ipx-1.2.5.tgz#a9301995f082af5758288f78f8796303b36bcfd2"
+  integrity sha512-zBPRsLHlFkN8uYAFbbTMZr6oTnVWUdME8i+FfeOY9D5qBbbSFxSH/ZPECif0ojkhtRnutq9+cN0mnnCTaYRjQw==
   dependencies:
     "@netlify/functions" "^1.2.0"
     etag "^1.8.1"
     fs-extra "^10.0.0"
-    ipx "^0.9.4"
+    ipx "^0.9.11"
     micromatch "^4.0.5"
     mkdirp "^1.0.4"
     murmurhash "^2.0.0"
@@ -230,19 +230,20 @@
     ufo "^0.8.0"
     unstorage "^0.2.8"
 
-"@netlify/plugin-nextjs@4.21.1":
-  version "4.21.1"
-  resolved "https://registry.yarnpkg.com/@netlify/plugin-nextjs/-/plugin-nextjs-4.21.1.tgz#877e6c75e917b5393df586cc95c6e07182ed2e04"
-  integrity sha512-2edJaL2JpHasYWhUHL3qElikMA1yKuqlwghns/7Hsj26DEjgiasHtESXyu9MT84Phvd3LZlTQyt56B+gp9PvaQ==
+"@netlify/plugin-nextjs@4.23.1":
+  version "4.23.1"
+  resolved "https://registry.yarnpkg.com/@netlify/plugin-nextjs/-/plugin-nextjs-4.23.1.tgz#de3e8b445bf0db30fbd94327154a181528f7c144"
+  integrity sha512-MeUdkSS+hkCJMt/ZhjLtO/zd7jnpxkC+2aJk4awxVDdKwdCyIh4E30HzKPWAE1zYqKOqHghUFyBi6AqT70J20Q==
   dependencies:
     "@netlify/esbuild" "0.14.25"
     "@netlify/functions" "^1.2.0"
-    "@netlify/ipx" "^1.2.3"
+    "@netlify/ipx" "^1.2.5"
     "@vercel/node-bridge" "^2.1.0"
     chalk "^4.1.2"
     execa "^5.1.1"
     fs-extra "^10.0.0"
     globby "^11.0.4"
+    merge-stream "^2.0.0"
     moize "^6.1.0"
     node-fetch "^2.6.6"
     node-stream-zip "^1.15.0"
@@ -1983,7 +1984,7 @@ ioredis@^4.27.9:
     redis-parser "^3.0.0"
     standard-as-callback "^2.1.0"
 
-ipx@^0.9.4:
+ipx@^0.9.11:
   version "0.9.11"
   resolved "https://registry.yarnpkg.com/ipx/-/ipx-0.9.11.tgz#89bbeffc6f62df80dfd0f8fe1e68c6638d09251c"
   integrity sha512-/wsBt7hV8rvNR6O4kwgOUAhtm0F/M/mXaolXot/Bz7fdOD+W7i9OtWuoASWv1PFwwtOunhZGaoCx8BOpSdG2VQ==
