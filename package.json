@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@netlify/plugin-nextjs": "4.23.1",
-    "autoprefixer": "10.4.8",
+    "autoprefixer": "10.4.11",
     "next": "12.3.0",
     "postcss": "8.4.16",
     "react": "^18.2.0",
