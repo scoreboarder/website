@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import Heading from "./Heading";
 
 export default function SectionFeatures() {
@@ -8,7 +6,7 @@ export default function SectionFeatures() {
       <Feature
         icon="/features/multple.svg"
         iconAlt="TODO"
-        title="Multiple Scoreboards" 
+        title="Multiple Scoreboards"
         description="You can have as many scoreboards as you want. You can also have the same people on multiple different scoreboards if you want."
         image="/features/multiple.webp"
         imageAlt="TODO"
@@ -32,7 +30,7 @@ export default function SectionFeatures() {
         imageAlt="TODO"
         reverse={false}
       />
-        <Feature
+      <Feature
         icon="/features/icon.png"
         iconAlt="TODO"
         title="Easy to use"
