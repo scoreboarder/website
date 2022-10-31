@@ -8,7 +8,7 @@ export default function Header({ currentServers }) {
     <header className="space-y-8 sm:space-y-12">
       <div>
         <Heading.Title>
-          Keep track of scoreboards on Discord{" "}
+          Keep track of none of your scoreboards on Skype{" "}
           <span className="text-primary">with ease</span>
         </Heading.Title>
         <Heading.Subtitle>
