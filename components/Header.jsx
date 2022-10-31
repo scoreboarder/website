@@ -39,7 +39,7 @@ export default function Header({ currentServers }) {
       <ul className="flex flex-col sm:flex-row space-y-8 sm:space-y-0 sm:space-x-16">
         <Stat title="Current Servers" value={currentServers ?? "3500+"} />
         <Stat title="Top.gg rating" value="4.5/5" />
-        <Stat title="Total scoreboards" value="15000+" />
+        <Stat title="Total scoreboards" value="18000+" />
       </ul>
     </header>
   );
