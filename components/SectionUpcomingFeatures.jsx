@@ -28,13 +28,13 @@ export default function SectionUpcomingFeatures({ issues }) {
 function UpcomingFeature({ number, title, body, url }) {
   return (
     <li className="text-white border-primary cursor-pointer">
-      <Link href={url} passHref>
-        <a target="_blank" rel="noreferrer">
+      <Link href={url} target="_blank" rel="noreferrer">
+        <>
           <h3 className="font-semibold">
             <span className="text-primary">#{number}</span> {title}
           </h3>
           <p>{body}</p>
-        </a>
+        </>
       </Link>
     </li>
   );

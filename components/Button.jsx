@@ -1,6 +1,13 @@
 import Image from "next/image";
 
-export default function Button({ children, href, type, icon, iconAlt, ...props }) {
+export default function Button({
+  children,
+  href,
+  type,
+  icon,
+  iconAlt,
+  ...props
+}) {
   const types = {
     primary: "text-black bg-primary hover:bg-primaryDarker",
     secondary: "text-black bg-secondary hover:bg-secondaryDarker",
@@ -15,7 +22,7 @@ export default function Button({ children, href, type, icon, iconAlt, ...props }
       href={href}
       {...props}
     >
-      <Image src={icon} alt={iconAlt} width="20px" height="20px" />
+      <Image src={icon} alt={iconAlt} width={20} height={20} />
       <span className="font-semibold">{children}</span>
     </a>
   );
