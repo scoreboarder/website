@@ -1,10 +1,15 @@
+import PlausibleProvider from "next-plausible";
 import Head from "next/head";
 
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <PlausibleProvider
+      domain="scoreboarder.xyz"
+      customDomain="scoreboarder.xyz"
+      trackOutboundLinks
+    >
       <Head>
         <title>
           Scoreboarder: Keep track of scoreboards on Discord with ease
@@ -28,7 +33,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <Component {...pageProps} />
-    </>
+    </PlausibleProvider>
   );
 }
 

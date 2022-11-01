@@ -37,12 +37,6 @@ class MyDocument extends Document {
             property="og:image"
             content="https://scoreboarder.xyz/opengraph.jpg"
           ></meta>
-
-          <script
-            defer
-            data-domain="scoreboarder.xyz"
-            src="/js/script.js"
-          ></script>
         </Head>
         <body className="bg-background bg-dots">
           <Main />
