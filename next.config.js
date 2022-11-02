@@ -1,6 +1,14 @@
-const { withPlausibleProxy } = require("next-plausible");
-
-module.exports = withPlausibleProxy()({
-  // ...your next js config, if any
-  // Important! it is mandatory to pass a config object, even if empty
-});
+module.exports = {
+  async rewrites() {
+    return [
+      {
+        source: "/js/script.outbound-links.js",
+        destination: "https://plausible.io/js/script.outbound-links.js",
+      },
+      {
+        source: "/api/event",
+        destination: "https://plausible.io/api/event",
+      },
+    ];
+  },
+};

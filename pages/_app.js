@@ -1,23 +1,17 @@
-import PlausibleProvider from "next-plausible";
 import Head from "next/head";
 
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <PlausibleProvider
-      domain="scoreboarder.xyz"
-      customDomain="scoreboarder.xyz"
-      trackOutboundLinks
-    >
+    <>
       <Head>
         <title>
           Scoreboarder: Keep track of scoreboards on Discord with ease
         </title>
         <meta
           name="description"
-          content="Discord bot for making scoreboards, leaderboards and much more! Create any number of scoreboards and add however many people you want to them.
-          "
+          content="Discord bot for making scoreboards, leaderboards and much more! Create any number of scoreboards and add however many people you want to them."
         />
         <meta property="og:title" content="Scoreboarder"></meta>
         <meta
@@ -33,7 +27,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <Component {...pageProps} />
-    </PlausibleProvider>
+    </>
   );
 }
 
