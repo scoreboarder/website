@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -31,6 +32,12 @@ class MyDocument extends Document {
             href="/favicons/favicon-192x192.png"
             sizes="192x192"
           ></link>
+
+          <Script
+            defer
+            data-domain="alvar.dev"
+            src="/js/script.outbound-links.js"
+          ></Script>
 
           <meta name="twitter:card" content="summary_large_image"></meta>
           <meta
