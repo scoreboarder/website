@@ -35,7 +35,7 @@ class MyDocument extends Document {
 
           <Script
             defer
-            data-domain="alvar.dev"
+            data-domain="scoreboarder.xyz"
             src="/js/script.outbound-links.js"
           ></Script>
 
