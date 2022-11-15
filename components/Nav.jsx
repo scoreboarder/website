@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import Button from "./Button";
 import ButtonGroup from "./ButtonGroup";
@@ -10,12 +11,14 @@ export default function Nav() {
         <Image alt="Scoreboarder logo" src="/logo.svg" height={50} width={50} />
       </div>
       <div className="hidden sm:block">
-        <Image
-          alt="Scoreboarder logotype"
-          src="/logotype.svg"
-          height={50}
-          width={220}
-        />
+        <Link href="/">
+          <Image
+            alt="Scoreboarder logotype"
+            src="/logotype.svg"
+            height={50}
+            width={220}
+          />
+        </Link>
       </div>
 
       <ButtonGroup>
