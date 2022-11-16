@@ -8,7 +8,7 @@ export default function SectionFeatures() {
         iconAlt="TODO"
         title="Multiple Scoreboards"
         description="You can have as many scoreboards as you want. You can also have the same people on multiple different scoreboards if you want."
-        image="/features/multiple.webp"
+        image="/features/multiple.png"
         imageAlt="TODO"
         reverse={false}
       />
@@ -17,7 +17,7 @@ export default function SectionFeatures() {
         iconAlt="TODO"
         title="Use roles"
         description="By using roles, each individual with that role will be added to the scoreboard. This could be useful for keeping track of points for a game, competition or similiar. You can also add any word to your scoreboard if you want Team A and Team B on the scoreboard."
-        image="/features/role.webp"
+        image="/features/roles.png"
         imageAlt="TODO"
         reverse={true}
       />
@@ -26,16 +26,16 @@ export default function SectionFeatures() {
         iconAlt="TODO"
         title="View all your scoreboards in Discord"
         description="All of your scoreboards will be accessible straight from the Discord chat. There are also several themes available to suit your needs."
-        image="/features/show.webp"
+        image="/features/show.png"
         imageAlt="TODO"
         reverse={false}
       />
       <Feature
         icon="/features/icon.png"
         iconAlt="TODO"
-        title="Easy to use"
-        description="Getting started with Scoreboarder is simple. There is not set up required, simply add Scoreboarder to your Discord server and create your first scoreboard!"
-        image="/features/easy.webp"
+        title="Supports slash commands"
+        description="Scoreboarder works fully with slash commands. This includes autocomplete for scoreboard names and help filling out commands."
+        image="/features/slash-commands.png"
         imageAlt="TODO"
         reverse={true}
       />
