@@ -33,11 +33,11 @@ class MyDocument extends Document {
             sizes="192x192"
           ></link>
 
-          <Script
+          <script
             defer
             data-domain="scoreboarder.xyz"
             src="/js/script.outbound-links.js"
-          ></Script>
+          ></script>
 
           <meta name="twitter:card" content="summary_large_image"></meta>
           <meta
