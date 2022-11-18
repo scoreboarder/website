@@ -7,19 +7,24 @@ import ButtonGroup from "./ButtonGroup";
 export default function Nav() {
   return (
     <nav className="flex flex-row justify-between items-center">
-      <div className="block sm:hidden">
-        <Image alt="Scoreboarder logo" src="/logo.svg" height={50} width={50} />
-      </div>
-      <div className="hidden sm:block">
-        <Link href="/">
+      <Link href="/">
+        <div className="block sm:hidden">
+          <Image
+            alt="Scoreboarder logo"
+            src="/logo.svg"
+            height={50}
+            width={50}
+          />
+        </div>
+        <div className="hidden sm:block">
           <Image
             alt="Scoreboarder logotype"
             src="/logotype.svg"
             height={50}
             width={220}
           />
-        </Link>
-      </div>
+        </div>
+      </Link>
 
       <ButtonGroup>
         <Button
