@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Heading from "./Heading";
 
 export default function SectionFeatures() {
@@ -69,15 +70,13 @@ function Feature({
       </div>
 
       <div className="w-full lg:w-1/2 lg:mx-8 ">
-        <img src={image} alt={imageAlt} className="rounded-3xl" />
-        {/* <Image
+        <Image
           src={image}
           alt={imageAlt}
           className="rounded-3xl"
-          layout="responsive"
-          width="800px"
-          height="600px"
-        /> */}
+          width={800}
+          height={600}
+        />
       </div>
     </section>
   );
