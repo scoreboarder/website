@@ -1,10 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import TextLink from "./TextLink";
 
-export default function Footer() {
-  const year = new Date().getFullYear();
+const year = new Date().getFullYear();
 
+export default function Footer() {
   return (
     <footer className="border-t border-dashed border-separator pt-5">
       <Image src="/logo.svg" alt="Scoreboarder logo" width={40} height={40} />

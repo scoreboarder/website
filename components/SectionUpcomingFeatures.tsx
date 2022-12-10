@@ -3,7 +3,42 @@ import Link from "next/link";
 import Heading from "./Heading";
 import TextLink from "./TextLink";
 
-export default function SectionUpcomingFeatures({ issues }) {
+function truncateString(str, num) {
+  if (str.length > num) {
+    return str.slice(0, num) + "...";
+  } else {
+    return str;
+  }
+}
+
+async function fetchGithubIssues() {
+  const issuesResponse = await fetch(
+    "https://api.github.com/repos/scoreboarder/suggestions/issues",
+    {
+      method: "GET",
+      headers: { Accept: "application/vnd.github.v3+json" },
+    }
+  );
+
+  const json = await issuesResponse.json();
+
+  if (!json || json.message) return [];
+
+  return json
+    .filter((item) => {
+      return item.labels.some((label) => label.name == "accepted");
+    })
+    .map((item) => ({
+      number: item.number,
+      title: item.title,
+      body: truncateString(item.body, 100),
+      url: item.html_url,
+    }));
+}
+
+export default async function SectionUpcomingFeatures() {
+  const issues = await fetchGithubIssues();
+
   return (
     <div className="bg-card shadow-xl border-l-0 sm:border-l-2 sm:border-r-2 border-r-0 border-2 border-primaryDarker -mx-4 sm:-mx-16 px-4 sm:px-16 py-16 sm:py-24 flex flex-col items-center">
       <Heading.H2>Upcoming Features</Heading.H2>

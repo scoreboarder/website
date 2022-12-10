@@ -3,7 +3,26 @@ import Button from "./Button";
 import ButtonGroup from "./ButtonGroup";
 import Stat from "./Stat";
 
-export default function Header({ currentServers }) {
+async function fetchTopGGStats() {
+  const topggStatsResponse = await fetch(
+    "https://top.gg/api/bots/641229153433288724",
+    {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+        Authorization: process.env.TOPGG_TOKEN,
+      },
+    }
+  );
+
+  const json = await topggStatsResponse.json();
+
+  return json?.server_count ?? "Error";
+}
+
+export default async function Header() {
+  const currentServers = await fetchTopGGStats();
+
   return (
     <header className="space-y-8 sm:space-y-12">
       <div>
