@@ -1,7 +1,5 @@
 import Link from "next/link";
-import Footer from "../../components/Footer";
 import Heading from "../../components/Heading";
-import Nav from "../../components/Nav";
 
 export default function TermsOfService() {
   return (

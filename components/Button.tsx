@@ -5,7 +5,7 @@ interface Props {
   children: ReactNode;
   href?: string;
   type: "primary" | "secondary";
-  icon?: string;
+  icon?: any;
   iconAlt?: string;
   target?: string;
   rel?: string;
@@ -33,7 +33,7 @@ export default function Button({
       href={href}
       {...props}
     >
-      <Image src={icon} alt={iconAlt} width={20} height={20} />
+      <Image src={icon} alt={iconAlt} className="w-5 h-5" />
       <span className="font-semibold">{children}</span>
     </a>
   );

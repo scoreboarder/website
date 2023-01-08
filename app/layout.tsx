@@ -1,5 +1,7 @@
 import "./globals.css";
 
+import Script from "next/script";
+
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 
@@ -33,11 +35,12 @@ export default function RootLayout({
           sizes="192x192"
         ></link>
 
-        <script
+        <Script
           defer
           data-domain="scoreboarder.xyz"
           src="/js/script.outbound-links.js"
-        ></script>
+          strategy="lazyOnload"
+        />
 
         <meta name="twitter:card" content="summary_large_image"></meta>
         <meta

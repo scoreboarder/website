@@ -20,6 +20,9 @@ async function fetchTopGGStats() {
   return json?.server_count ?? "Error";
 }
 
+import discordIcon from "../assets/icons/discord.svg";
+import robotIcon from "../assets/icons/robot.svg";
+
 export default async function Header() {
   const currentServers = await fetchTopGGStats();
 
@@ -39,14 +42,16 @@ export default async function Header() {
           <Button
             href="https://discord.com/api/oauth2/authorize?client_id=641229153433288724&permissions=2147485696&scope=applications.commands%20bot"
             type="primary"
-            icon="/icons/robot.svg"
+            icon={robotIcon}
+            iconAlt="robot"
           >
             Invite Scoreboarder
           </Button>
           <Button
             href="https://discord.gg/eY5rpZ8vrA"
             type="secondary"
-            icon="/icons/discord.svg"
+            icon={discordIcon}
+            iconAlt="discord logo"
           >
             Join Support Server
           </Button>
