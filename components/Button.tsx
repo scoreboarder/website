@@ -1,4 +1,15 @@
 import Image from "next/image";
+import { ReactNode } from "react";
+
+interface Props {
+  children: ReactNode;
+  href?: string;
+  type: "primary" | "secondary";
+  icon?: any;
+  iconAlt?: string;
+  target?: string;
+  rel?: string;
+}
 
 export default function Button({
   children,
@@ -7,7 +18,7 @@ export default function Button({
   icon,
   iconAlt,
   ...props
-}) {
+}: Props) {
   const types = {
     primary: "text-black bg-primary hover:bg-primaryDarker",
     secondary: "text-black bg-secondary hover:bg-secondaryDarker",
@@ -22,7 +33,7 @@ export default function Button({
       href={href}
       {...props}
     >
-      <Image src={icon} alt={iconAlt} width={20} height={20} />
+      <Image src={icon} alt={iconAlt} className="w-5 h-5" />
       <span className="font-semibold">{children}</span>
     </a>
   );

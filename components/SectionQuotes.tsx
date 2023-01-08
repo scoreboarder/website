@@ -2,18 +2,15 @@ import Image from "next/image";
 
 import Heading from "./Heading";
 
+import quoteIcon from "../assets/icons/quote.svg";
+
 function Quote({ message, user }) {
   return (
     <li className="w-full sm:w-[unset] block mt-2 mb-2 sm:m-2 border-2 border-dashed border-separator">
       <blockquote className="flex flex-col justify-between rounded-2xl bg-primaryLighter p-6 h-full">
         <div className="sm:max-w-[200px]">
           <div className="mb-4">
-            <Image
-              src="/icons/quote.svg"
-              alt="Citation mark"
-              width={30}
-              height={30}
-            />
+            <Image src={quoteIcon} alt="Citation mark" className="w-8 h-8" />
           </div>
 
           <span className="text-white">{message}</span>

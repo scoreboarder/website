@@ -1,4 +1,11 @@
-function Title({ children, className }) {
+import { ReactNode } from "react";
+
+interface HeadingProps {
+  className?: string;
+  children: ReactNode;
+}
+
+function Title({ children, className }: HeadingProps) {
   return (
     <h1
       className={
@@ -11,7 +18,7 @@ function Title({ children, className }) {
   );
 }
 
-function Subtitle({ children, className }) {
+function Subtitle({ children, className }: HeadingProps) {
   return (
     <h2 className={"text-xl sm:text-2xl text-white mb-12 " + className}>
       {children}
@@ -19,7 +26,7 @@ function Subtitle({ children, className }) {
   );
 }
 
-function H2({ children, className }) {
+function H2({ children, className }: HeadingProps) {
   return (
     <h2
       className={
@@ -32,7 +39,7 @@ function H2({ children, className }) {
   );
 }
 
-function H3({ children, className }) {
+function H3({ children, className }: HeadingProps) {
   return (
     <h3 className={"max-w-[55ch] text-white text-center mb-4 " + className}>
       {children}
