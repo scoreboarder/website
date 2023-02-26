@@ -1,4 +1,9 @@
+import { Metadata } from "next";
 import Heading from "../../components/Heading";
+
+export const metadata: Metadata = {
+  title: "Privacy policy",
+};
 
 export default function PrivacyPolicy() {
   return (

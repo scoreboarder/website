@@ -1,5 +1,10 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import Heading from "../../components/Heading";
+
+export const metadata: Metadata = {
+  title: "Terms of service",
+};
 
 export default function TermsOfService() {
   return (
