@@ -7,11 +7,11 @@ import Header from "../components/Header";
 export default async function Home() {
   return (
     <div className="space-y-32">
-      {/* @ts-ignore */}
+      {/* @ts-expect-error Async component */}
       <Header />
       <SectionFeatures />
       <SectionQuotes />
-      {/* @ts-ignore */}
+      {/* @ts-expect-error Async component */}
       <SectionUpcomingFeatures />
       <SectionJoin />
     </div>

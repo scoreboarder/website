@@ -1,7 +1,14 @@
 {
-  "extends": "next",
+  "extends":  [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": ["prettier", "@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
   "rules": {
     "react/no-unescaped-entities": "off",
-    "@next/next/no-document-import-in-page": "off"
-  }
+    "@next/next/no-document-import-in-page": "off",
+    "prettier/prettier": "error"
+  },
+  "ignorePatterns": ["node_modules"]
 }
