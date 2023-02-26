@@ -5,8 +5,6 @@ import SectionQuotes from "../components/SectionQuotes";
 import Header from "../components/Header";
 import { Metadata } from "next";
 
-export const revalidate = 60 * 30;
-
 export const metadata: Metadata = {
   title: "Scoreboarder: Keep track of scoreboards on Discord with ease",
   description:
