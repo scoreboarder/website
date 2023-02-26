@@ -17,6 +17,9 @@ async function fetchGithubIssues() {
     {
       method: "GET",
       headers: { Accept: "application/vnd.github.v3+json" },
+      next: {
+        revalidate: 60 * 20,
+      },
     }
   );
 
