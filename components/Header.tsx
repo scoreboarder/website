@@ -13,7 +13,7 @@ async function fetchTopGGStats() {
         Authorization: process.env.TOPGG_TOKEN,
       },
       next: {
-        revalidate: 60 * 5,
+        revalidate: 300,
       },
     }
   );
