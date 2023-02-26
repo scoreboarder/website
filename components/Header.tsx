@@ -12,6 +12,9 @@ async function fetchTopGGStats() {
         Accept: "application/json",
         Authorization: process.env.TOPGG_TOKEN,
       },
+      next: {
+        revalidate: 300,
+      },
     }
   );
 
