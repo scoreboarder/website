@@ -22,9 +22,6 @@ export const metadata: Metadata = {
     },
     { url: "/favicons/favicon-192x192.png", sizes: "192x192" },
   ],
-  openGraph: {
-    images: "https://scoreboarder.xyz/opengraph.jpg",
-  },
   twitter: {
     card: "summary_large_image",
   },
