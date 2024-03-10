@@ -12,9 +12,7 @@ async function fetchTopGGStats() {
         Accept: "application/json",
         Authorization: process.env.TOPGG_TOKEN,
       },
-      next: {
-        revalidate: 300,
-      },
+      cache: "no-cache",
     }
   );
 
@@ -25,10 +23,9 @@ async function fetchTopGGStats() {
 
 import discordIcon from "../assets/icons/discord.svg";
 import robotIcon from "../assets/icons/robot.svg";
+import { Suspense } from "react";
 
-export default async function Header() {
-  const currentServers = await fetchTopGGStats();
-
+export default function Header() {
   return (
     <header className="space-y-8 sm:space-y-12">
       <div>
@@ -63,11 +60,28 @@ export default async function Header() {
 
       <hr className="border-separator border-dashed" />
 
-      <ul className="flex flex-col sm:flex-row space-y-8 sm:space-y-0 sm:space-x-16">
-        <Stat title="Current Servers" value={currentServers ?? "3500+"} />
+      <ul className="flex flex-col sm:flex-row gap-y-8 sm:space-y-0 sm:gap-x-16">
+        <Suspense
+          fallback={
+            <div className="flex flex-col gap-3">
+              <div className="bg-slate-800 h-7 w-44 rounded-lg animate-pulse" />
+              <div className="bg-slate-800 h-14 w-44 rounded-lg animate-pulse" />
+            </div>
+          }
+        >
+          {/* @ts-ignore */}
+          <CurrentServers />
+        </Suspense>
         <Stat title="Top.gg rating" value="4.5/5" />
         <Stat title="Total scoreboards" value="18000+" />
       </ul>
     </header>
   );
+}
+
+async function CurrentServers() {
+  await new Promise((r) => setTimeout(r, 1500));
+  const currentServers = await fetchTopGGStats();
+
+  return <Stat title="Current Servers" value={currentServers ?? "3500+"} />;
 }

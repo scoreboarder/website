@@ -1,6 +1,6 @@
 module.exports = {
   experimental: {
-    appDir: true,
+    ppr: true,
   },
   async rewrites() {
     return [
